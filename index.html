@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Kuhle</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <style>
+        @keyframes float {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+        }
+        @keyframes drift {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(20px); }
+            100% { transform: translateX(0); }
+        }
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+        .drifting {
+            animation: drift 8s ease-in-out infinite;
+        }
+        .fade-in {
+            opacity: 0;
+            transition: opacity 1s ease-in;
+        }
+        .fade-in.visible {
+            opacity: 1;
+        }
+        .heart-mend {
+            transition: all 1s ease;
+        }
+        .image-hover-effect:hover {
+            transform: scale(1.03);
+            box-shadow: 0 10px 25px -5px rgba(236, 72, 153, 0.4);
+        }
+    </style>
+</head>
+<body class="font-sans bg-white text-pink-900">
+    <!-- Hero Section -->
+    <section class="min-h-screen bg-gradient-to-br from-pink-200 to-purple-300 flex flex-col items-center justify-center relative overflow-hidden">
+        <!-- Floating flowers -->
+        <div class="flower absolute top-10 left-1/4 text-3xl opacity-70 floating">🌸</div>
+        <div class="flower absolute top-1/3 left-10 text-2xl opacity-60 floating" style="animation-delay: 1s;">🌸</div>
+        <div class="flower absolute bottom-1/4 right-20 text-3xl opacity-80 floating" style="animation-delay: 2s;">🌸</div>
+        <div class="flower absolute top-20 right-1/3 text-2xl opacity-50 floating" style="animation-delay: 3s;">🌸</div>
+        <div class="flower absolute bottom-40 left-20 text-3xl opacity-70 floating" style="animation-delay: 1.5s;">🌸</div>
+        
+        <!-- Confetti -->
+        <div class="confetti absolute top-0 left-0 w-full h-full pointer-events-none"></div>
+        
+        <!-- Content -->
+        <div class="z-10 text-center px-4">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 text-pink-700">💖 Happy Birthday Kuhle 💖</h1>
+            <p class="text-xl md:text-2xl mb-8 text-pink-800">You are the best part of my life, and today is all about you.</p>
+            
+            <!-- Photo Placeholder -->
+            <div class="mx-auto mb-8 w-64 h-64 md:w-80 md:h-80 rounded-full border-4 border-pink-300 shadow-xl overflow-hidden bg-pink-100 flex items-center justify-center">
+                <!-- Place Kuhle solo photo here -->
+                <img src="outside2.jpg" alt="Kuhle solo" class="w-full h-full object-cover">
+
+            </div>
+            
+            <p class="text-lg md:text-xl text-pink-700 glow">Scroll down to see your special message</p>
+        </div>
+        
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <svg class="w-8 h-8 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Why I Love You Section -->
+    <section class="py-16 px-4 relative bg-white">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-pink-600 flex items-center justify-center">
+                <span class="mr-3">🌸</span> Why I Love You <span class="ml-3">🌸</span>
+            </h2>
+            
+            <div class="flex flex-col md:flex-row items-center mb-12 fade-in">
+                <!-- Place Kuhle smiling/laughing photo here -->
+                <div class="md:w-1/2 mb-6 md:mb-0 md:pr-8">
+                    <div class="rounded-xl overflow-hidden shadow-lg h-64 bg-pink-100 flex items-center justify-center">
+                        <img src="gallery2.jpg" alt="Kuhle solo" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <p class="text-lg md:text-xl leading-relaxed">
+                        Kuhle, I love your smile and your laugh. I love how just being around you makes everything better. 
+                        You can make me laugh even when I don't feel like it. You're beautiful — so beautiful — and you 
+                        always find the best in people, even in me when I don't deserve it.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row-reverse items-center mb-12 fade-in">
+                <!-- Place Kuhle smiling/laughing photo here -->
+                <div class="md:w-1/2 mb-6 md:mb-0 md:pl-8">
+                    <div class="rounded-xl overflow-hidden shadow-lg h-64 bg-pink-100 flex items-center justify-center">
+                        <img src="mylove.jpg" alt="Kuhle solo" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <p class="text-lg md:text-xl leading-relaxed">
+                        I love how positive you are, how you show me love, and how all of that makes me love you more every day. 
+                        You don't even know how much you keep me going.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center fade-in">
+                <!-- Place Kuhle smiling/laughing photo here -->
+                <div class="md:w-1/2 mb-6 md:mb-0 md:pr-8">
+                    <div class="rounded-xl overflow-hidden shadow-lg h-64 bg-pink-100 flex items-center justify-center">
+                        <img src="smile.jpg" alt="Kuhle solo" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <p class="text-lg md:text-xl leading-relaxed">
+                        I also love your love for God. The way you give yourself to Him and the way you spread joy to others 
+                        inspires me. You make people feel comfortable, and you make me want to grow, not just for myself, but for us.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Corner flowers -->
+        <div class="absolute top-4 left-4 text-3xl opacity-30">🌸</div>
+        <div class="absolute top-4 right-4 text-3xl opacity-30">🌸</div>
+        <div class="absolute bottom-4 left-4 text-3xl opacity-30">🌸</div>
+        <div class="absolute bottom-4 right-4 text-3xl opacity-30">🌸</div>
+    </section>
+
+    <!-- Birthday Wish Section -->
+    <section class="py-16 px-4 bg-gradient-to-br from-purple-200 to-pink-300 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-white flex items-center justify-center">
+                <span class="mr-3">🎂</span> My Birthday Wish for You <span class="ml-3">🎂</span>
+            </h2>
+            
+            <p class="text-lg md:text-xl leading-relaxed mb-8 text-white">
+                My wish for you is happiness. I want you to laugh more, smile more, and enjoy the things you love — 
+                your flowers, your picnics, your coffee dates, your music, and your time with God.
+            </p>
+            
+            <p class="text-lg md:text-xl leading-relaxed mb-12 text-white">
+                I thank God you were born. I thank Him that I get to love you. And I pray He blesses you with joy, 
+                peace, and everything your heart has been asking Him for.
+            </p>
+            
+            <!-- Flower crown image -->
+            <div class="relative mx-auto w-64 h-64 md:w-80 md:h-80 mb-8">
+                <div class="absolute -top-8 left-1/2 transform -translate-x-1/2 text-4xl drifting" style="z-index: 20;">
+                    🌸🌸🌸
+                </div>
+                <!-- Place Kuhle outdoor/nature joyful photo here -->
+                <div class="rounded-full border-4 border-white shadow-xl overflow-hidden w-full h-full bg-pink-100 flex items-center justify-center relative" style="z-index: 10;">
+                    <img src="beautiful.jpg" alt="Kuhle solo" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Sparkles -->
+        <div class="sparkle absolute top-20 left-1/4 text-xl opacity-70">✨</div>
+        <div class="sparkle absolute top-1/3 right-1/4 text-xl opacity-60">✨</div>
+        <div class="sparkle absolute bottom-1/4 left-1/3 text-xl opacity-80">✨</div>
+        <div class="sparkle absolute top-1/2 right-20 text-xl opacity-50">✨</div>
+    </section>
+
+    <!-- Apology Section -->
+    <section class="py-16 px-4 bg-gradient-to-br from-pink-100 to-white relative">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-pink-600">💔 From My Heart</h2>
+            
+            <p class="text-lg md:text-xl leading-relaxed mb-6">
+                I know I haven't been the man you need me to be. I've been focused on myself, on school, and on my struggles, 
+                and I haven't given us the attention and love we deserve.
+            </p>
+            
+            <p class="text-lg md:text-xl leading-relaxed mb-6">
+                I'm sorry for always apologizing and not changing fast enough. I'm sorry for not making you feel like the 
+                priority you are. But please believe me — I love you. I don't take you or your love for granted.
+            </p>
+            
+            <!-- Heart mending animation -->
+            <div class="my-8 flex justify-center items-center">
+                <div class="text-5xl heart-mend" id="heart-animation">💔</div>
+            </div>
+            
+            <!-- Place couple photo here -->
+            <div class="mt-12 mx-auto w-64 h-64 rounded-xl overflow-hidden shadow-lg bg-pink-100 flex items-center justify-center">
+                <img src="usopt3.jpg" alt="Kuhle solo" class="w-full h-full object-cover">
+            </div>
+            <p class="mt-4 text-pink-600 font-medium">Us — no matter what</p>
+        </div>
+    </section>
+
+    <!-- Promise Section -->
+    <section class="py-16 px-4 bg-white relative">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-pink-600">🌹 My Promise</h2>
+            
+            <p class="text-lg md:text-xl leading-relaxed mb-8 text-center max-w-3xl mx-auto">
+                I promise I'll do better. I promise to love you the way you deserve — like the queen you are. 
+                I'll put in the time, the effort, and the love to make you feel secure and happy.
+            </p>
+            
+            <p class="text-lg md:text-xl leading-relaxed mb-12 text-center max-w-3xl mx-auto">
+                I promise to grow with you, to create the moments we've been missing, and to walk with you in God. 
+                I don't want to just love you in words, I want to love you in actions.
+            </p>
+            
+            <p class="text-lg md:text-xl leading-relaxed mb-12 text-center max-w-3xl mx-auto">
+                It won't always be perfect, but it will always be real. Because it's me and you.
+            </p>
+            
+            <!-- Photo Gallery -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-12">
+                <!-- Gallery images -->
+                <div class="rounded-xl overflow-hidden shadow-md bg-pink-100 h-48 flex items-center justify-center image-hover-effect transition-all duration-300 relative group">
+                    <!-- Place gallery image 1 here -->
+                    <img src="gallery.jpg" alt="Kuhle solo" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-pink-200 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-md bg-pink-100 h-48 flex items-center justify-center image-hover-effect transition-all duration-300 relative group">
+                    <!-- Place gallery image 2 here -->
+                    <img src="gallery1.jpg" alt="Kuhle solo" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-pink-200 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-md bg-pink-100 h-48 flex items-center justify-center image-hover-effect transition-all duration-300 relative group">
+                    <!-- Place gallery image 3 here -->
+                    <img src="usopt4.jpg" alt="Kuhle solo" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-pink-200 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-md bg-pink-100 h-48 flex items-center justify-center image-hover-effect transition-all duration-300 relative group">
+                    <!-- Place gallery image 4 here -->
+                    <img src="hmmm.jpg" alt="Kuhle solo" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-pink-200 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-md bg-pink-100 h-48 flex items-center justify-center image-hover-effect transition-all duration-300 relative group">
+                    <!-- Place gallery image 5 here (couple photo) -->
+                    <img src="baby1.jpg" alt="Kuhle solo" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-pink-200 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-md bg-pink-100 h-48 flex items-center justify-center image-hover-effect transition-all duration-300 relative group">
+                    <!-- Place gallery image 6 here -->
+                    <img src="baby.jpg" alt="Kuhle solo" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-pink-200 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Corner roses -->
+        <div class="absolute top-4 left-4 text-3xl opacity-20">🌹</div>
+        <div class="absolute top-4 right-4 text-3xl opacity-20">🌹</div>
+        <div class="absolute bottom-4 left-4 text-3xl opacity-20">🌹</div>
+        <div class="absolute bottom-4 right-4 text-3xl opacity-20">🌹</div>
+    </section>
+
+    <!-- Closing Section -->
+    <section class="min-h-screen py-16 px-4 bg-gradient-to-br from-pink-400 to-purple-500 flex flex-col items-center justify-center relative overflow-hidden">
+        <!-- Confetti background -->
+        <div class="confetti-burst absolute inset-0 w-full h-full pointer-events-none"></div>
+        
+        <div class="relative z-10 text-center">
+            <h2 class="text-4xl md:text-6xl font-bold mb-8 text-white" id="birthday-button">🎉 Happy Birthday, Kuhle 🎉</h2>
+            <p class="text-2xl md:text-3xl text-white mb-12">I love you, always and forever.</p>
+            
+            <!-- Place fun/cute Kuhle photo here -->
+            <div class="mx-auto mb-8 w-64 h-64 rounded-xl overflow-hidden shadow-2xl bg-pink-200 flex items-center justify-center">
+                <img src="usopt1.jpg" alt="Kuhle solo">
+            </div>
+            
+            <!-- Hidden note button -->
+            <button id="hidden-note-btn" class="mt-8 px-6 py-3 bg-white text-pink-600 rounded-full font-medium shadow-lg hover:bg-pink-100 transition-colors duration-300">
+                💌 Click here for one more thing...
+            </button>
+            
+            <!-- Hidden note (initially hidden) -->
+            <div id="hidden-note" class="mt-6 p-6 bg-white bg-opacity-90 rounded-xl max-w-md mx-auto hidden">
+                <p class="text-lg text-pink-800">👉 Next month, I'm taking you out. Just us. No excuses, no delays. It's a promise.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Floating flowers animation
+        document.addEventListener('DOMContentLoaded', function() {
+            // Create additional floating flowers
+            const heroSection = document.querySelector('section:first-of-type');
+            for (let i = 0; i < 10; i++) {
+                const flower = document.createElement('div');
+                flower.className = 'flower absolute text-xl opacity-60 floating';
+                flower.innerHTML = '🌸';
+                
+                // Random position
+                const left = Math.random() * 100;
+                const top = Math.random() * 100;
+                const delay = Math.random() * 5;
+                const size = Math.random() * 0.5 + 0.5; // Between 0.5 and 1
+                
+                flower.style.left = `${left}%`;
+                flower.style.top = `${top}%`;
+                flower.style.animationDelay = `${delay}s`;
+                flower.style.transform = `scale(${size})`;
+                
+                heroSection.appendChild(flower);
+            }
+            
+            // Create sparkles for birthday wish section
+            const wishSection = document.querySelector('section:nth-of-type(3)');
+            for (let i = 0; i < 15; i++) {
+                const sparkle = document.createElement('div');
+                sparkle.className = 'sparkle absolute text-xl opacity-70';
+                sparkle.innerHTML = '✨';
+                
+                // Random position
+                const left = Math.random() * 100;
+                const top = Math.random() * 100;
+                const delay = Math.random() * 3;
+                const size = Math.random() * 0.5 + 0.5; // Between 0.5 and 1
+                
+                sparkle.style.left = `${left}%`;
+                sparkle.style.top = `${top}%`;
+                sparkle.style.animationDelay = `${delay}s`;
+                sparkle.style.transform = `scale(${size})`;
+                
+                wishSection.appendChild(sparkle);
+            }
+            
+            // Scroll animations
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            fadeElements.forEach(el => observer.observe(el));
+            
+            // Heart mending animation
+            const heartAnimation = document.getElementById('heart-animation');
+            const apologySection = document.querySelector('section:nth-of-type(4)');
+            
+            const heartObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            heartAnimation.innerHTML = '❤️';
+                            heartAnimation.classList.add('text-red-500');
+                        }, 500);
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            heartObserver.observe(apologySection);
+            
+            // Birthday button confetti
+            const birthdayButton = document.getElementById('birthday-button');
+            birthdayButton.addEventListener('click', () => {
+                confetti({
+                    particleCount: 150,
+                    spread: 70,
+                    origin: { y: 0.6 },
+                    colors: ['#ff0099', '#ff66b3', '#ff99cc', '#ffccff', '#ffffff']
+                });
+            });
+            
+            // Hidden note toggle
+            const hiddenNoteBtn = document.getElementById('hidden-note-btn');
+            const hiddenNote = document.getElementById('hidden-note');
+            
+            hiddenNoteBtn.addEventListener('click', () => {
+                if (hiddenNote.classList.contains('hidden')) {
+                    hiddenNote.classList.remove('hidden');
+                    hiddenNote.classList.add('animate__animated', 'animate__fadeIn');
+                } else {
+                    hiddenNote.classList.add('hidden');
+                }
+            });
+            
+            // Initial confetti falling
+            function createConfetti() {
+                const confettiContainer = document.querySelector('.confetti');
+                const colors = ['#ff0099', '#ff66b3', '#ff99cc', '#ffccff', '#ffffff'];
+                
+                for (let i = 0; i < 50; i++) {
+                    const confetti = document.createElement('div');
+                    confetti.className = 'absolute w-2 h-2';
+                    confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                    confetti.style.left = `${Math.random() * 100}%`;
+                    confetti.style.top = `${Math.random() * -100}%`;
+                    confetti.style.opacity = Math.random() * 0.5 + 0.5;
+                    confetti.style.transform = `rotate(${Math.random() * 360}deg)`;
+                    confetti.style.animation = `fall ${Math.random() * 5 + 5}s linear infinite`;
+                    confetti.style.animationDelay = `${Math.random() * 5}s`;
+                    
+                    // Create animation for falling
+                    const keyframes = `
+                        @keyframes fall {
+                            to {
+                                transform: translateY(100vh) rotate(${Math.random() * 360}deg);
+                            }
+                        }
+                    `;
+                    
+                    const style = document.createElement('style');
+                    style.innerHTML = keyframes;
+                    document.head.appendChild(style);
+                    
+                    confettiContainer.appendChild(confetti);
+                }
+            }
+            
+            createConfetti();
+            
+            // Confetti burst for closing section
+            function createConfettiBurst() {
+                const confettiContainer = document.querySelector('.confetti-burst');
+                const colors = ['#ff0099', '#ff66b3', '#ff99cc', '#ffccff', '#ffffff'];
+                
+                for (let i = 0; i < 100; i++) {
+                    const confetti = document.createElement('div');
+                    confetti.className = 'absolute w-2 h-2';
+                    confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                    confetti.style.left = `${Math.random() * 100}%`;
+                    confetti.style.top = `${Math.random() * 100}%`;
+                    confetti.style.opacity = Math.random() * 0.7 + 0.3;
+                    confetti.style.transform = `rotate(${Math.random() * 360}deg) scale(${Math.random() * 0.5 + 0.5})`;
+                    
+                    // Random animation
+                    const duration = Math.random() * 3 + 2;
+                    const delay = Math.random() * 2;
+                    const angle = Math.random() * 360;
+                    const distance = Math.random() * 50 + 20;
+                    
+                    confetti.style.animation = `drift ${duration}s ease-in-out ${delay}s infinite alternate`;
+                    
+                    // Create animation for drifting
+                    const keyframes = `
+                        @keyframes drift {
+                            0% {
+                                transform: translate(0, 0) rotate(${angle}deg);
+                            }
+                            100% {
+                                transform: translate(${Math.cos(angle * Math.PI / 180) * distance}px, ${Math.sin(angle * Math.PI / 180) * distance}px) rotate(${angle + 45}deg);
+                            }
+                        }
+                    `;
+                    
+                    const style = document.createElement('style');
+                    style.innerHTML = keyframes;
+                    document.head.appendChild(style);
+                    
+                    confettiContainer.appendChild(confetti);
+                }
+            }
+            
+            createConfettiBurst();
+        });
+    </script>
+</body>
+</html>
